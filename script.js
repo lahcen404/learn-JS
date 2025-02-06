@@ -42,3 +42,46 @@ btnMoins.onclick=function(){
     count--;
     myH1.textContent=count;
 }
+
+// Random Numbers
+const btnRoll = document.getElementById("btnRoll");
+const lblRoll = document.getElementById("lblRandom");
+let max = 10;
+let min = 1;
+let randomNumbers;
+
+btnRoll.onclick=function(){
+    randomNumbers= Math.floor(Math.random() * max)+min;
+    lblRoll.textContent=randomNumbers;
+}
+
+// if statement
+
+const myH3 = document.getElementById("myH3");
+const myH2 = document.getElementById("myH2");
+const btnIf = document.getElementById("btnIf");
+const maleCheck = document.getElementById("maleCheck")
+const femaleCheck = document.getElementById("femaleCheck")
+
+const age = 19;
+btnIf.onclick= function(){
+    // if (age<18){
+    //     myH3.style.color="Red";
+    //     myH3.textContent="You are not older to visit this site web";
+    //  } else {
+    //     myH3.style.color="green";
+    //     myH3.textContent="You can visit this web site !! Welcome !!"
+    //  }
+     if(maleCheck.checked){
+        myH2.textContent="you're male"
+     } else if (femaleCheck.checked){
+        myH2.textContent="you're female"
+     }else{
+        myH2.textContent="hahaha i don't know"
+
+     }
+  age <= 18 ? myH3.textContent="You are not older to visit this site web" :   myH3.textContent="You can visit this web site !! Welcome !!";
+
+
+
+    }
