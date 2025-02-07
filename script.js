@@ -1,13 +1,31 @@
-// let players = ["Messi", "Ronaldo", "Neymar", "Mbappe"];
-// players.push("lahcen");
-// players.pop(); // remove the last element
-// players.shift(); // remove the first element
-// players.unshift("Messi"); // add an element to the beginning
-// players.splice(1, 2); // remove 1 element from index 2
-// players.splice(1, 0, "Ronaldo", "Neymar"); // add 2 elements from index 1
-// let at = players.at(1);
-// console.log(players); 
-// console.log(at); 
+let players = ["Messi", "Ronaldooo", "Neymaaar", "Mbaaappe","Lahcen"];
+players.push("lahcen"); // add an element to the end
+players.pop(); // remove the last element
+players.shift(); // remove the first element
+players.unshift("Messi"); // add an element to the beginning
+players.splice(1, 1); // remove 1 element from index 1
+players.splice(3, 0, "Ronaldo", "Neymar","Suarez"); // add 2 elements from index 1
+let at = players.at(4);
+let numOfPlayers = players.length;
+let index = players.indexOf("Messi");
+
+//loop for array of players
+// for(let i=0; i<players.length ; i++){
+//     console.log(players[i])
+// }
+
+
+ for(let player of players){
+    console.log(player)
+ }
+players.sort().reverse();
+
+
+
+console.log(players); 
+console.log(at); 
+console.log(numOfPlayers);
+console.log(index);
 // document.getElementById("myP").textContent=("Hello this is the Paragraph");
 // // let age = window.prompt("What's ur age !!!")
 // // console.log(age)
@@ -81,7 +99,21 @@ btnIf.onclick= function(){
 
      }
   age <= 18 ? myH3.textContent="You are not older to visit this site web" :   myH3.textContent="You can visit this web site !! Welcome !!";
+ }
+const myForP = document.getElementById("myForP");
+const btnFor = document.getElementById("btnFor"); 
 
+btnFor.addEventListener("click",e =>{
+   myForP.style.backgroundColor="red"
+   myForP.textContent="You clickeed"
 
-
-    }
+})
+btnFor.addEventListener("mouseover",e =>{
+    myForP.style.backgroundColor="green"
+   myForP.textContent="woooooooow"
+})
+btnFor.addEventListener("mouseout", e=> {
+    myForP.style.backgroundColor="yellow"
+   myForP.textContent="niiiiice"
+})
+   

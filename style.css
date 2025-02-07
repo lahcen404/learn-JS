@@ -1,0 +1,11 @@
+#myForP{
+    background-color: aqua;
+    width: 200px;
+    height: 100px;
+    font-size: large;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
